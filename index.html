@@ -16,10 +16,10 @@
             <!-- Im header wird der Kopf der Webseite angegeben.
             Dies ist aber nur ein Struktur-Element. Damit der Header auch immer
             ganz oben angezeigt wird, braucht es noch das richtige CSS dafür. -->
-            <h1>Webseite von ...</h1>
+            <h1>Webseite von Sophia Oeschger</h1>
         </header>
-
-        <nav>
+        
+        <nav class="grid">
             <!-- Das Navigations-Element beinhaltet eine Liste von Links, mit
             denen man auf Unterwebseiten kommt. 
             Dieses Element wird oft in den Header gesetzt, kann aber auch auf
@@ -27,9 +27,37 @@
 
             <ul>
                 <li>
+                    <a href="./pages/zukunftspläne.html">Zukunftspläne</a>
+                </li>
+                <li>
                     <a href="./pages/hobbies.html">Hobbies</a>
                 </li>
-            </ul>
+                <li>
+                    <a href="./pages/kleiderstyle.html">Kleiderstyle</a>
+                </li>
+            
+            <li>
+                <a href="./pages/lieblingstiere.html">Lieblingstiere</a>
+            </li>
+            <li>
+                <a href="./pages/lieblingsessen.html">Lieblingsessen</a>
+            </li> 
+        </ul>
+        <svg height="300" width="300">
+            <ellipse cx="170" cy="180" rx="100" ry="90" fill="blue">
+              <animate attributeName="ry" values="130;10;80" dur="1s" repeatCount="indefinite"/>
+            </ellipse>
+        </svg>
+        <svg height="300" width="300">
+            <ellipse cx="170" cy="180" rx="100" ry="90" fill="green">
+              <animate attributeName="ry" values="80;10;80" dur="1s" repeatCount="indefinite"/>
+            </ellipse>
+        </svg>
+        <svg height="300" width="300">
+            <ellipse cx="170" cy="180" rx="100" ry="90" fill="yellow">
+              <animate attributeName="ry" values="120;10;80" dur="1s" repeatCount="indefinite"/>
+            </ellipse>
+        </svg>
         </nav>
 
         <main>
@@ -41,44 +69,93 @@
                 <!-- Dieses Element wird verwendet um einen Abschnitt auf der
                 Webseite vom Rest abzutrennen. Für Abschnitte in einem Text
                 verwendet man das p-Element. -->
-                <h2>Erster Abschnitt</h2>
+                <h2>Wer bin ich?</h2>
                 <p>
                     <!-- Mit dem p-Element Teilt man einen Text in Paragraphen
                     ein. Das p-Element hat meistens nur noch Text, Links oder
                     Bilder drin, sonst keine weiteren Elemente. -->
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-                    itaque eaque vel necessitatibus amet consectetur corrupti
-                    repudiandae ipsam aliquam sint.
+                    Hi, mein Name ist Sophia Oeschger und zurzeit besuche ich 
+                    die erste Klasse im Gymnasium Muttenz, mit dem Schwerpunktfach 
+                    bildnerisches Gestalten. Ich bin am 24.10.2008 in Basel geboren und aufgewachsen. 
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                    natus magni non cumque voluptatum similique ullam
-                    temporibus. Magni sequi sunt temporibus ab a nobis quo non,
-                    molestias sapiente dolorum repellendus obcaecati odit, dolor
-                    quae illo ratione, veniam autem id praesentium. Consectetur,
-                    totam asperiores expedita culpa doloribus nesciunt error
-                    architecto dolorum!
-                </p>
+                    <h2> Meine Hobbys und Freizeitaktivitäten</h2>
+                </p>Ich probiere immer wieder mal gerne etwas neues aus, aber was mir 
+                    am meisten gefällt, ist Tennisspielen, Hip-Hop tanzen, das Nähen 
+                    und besonders meine Zeichnungskurse liegen mir am Herzen. Bei gutem Wetter gehe ich 
+                    sehr gerne Joggen, spazieren oder auch Velo fahren, denn ich liebe die Natur, 
+                    die es reichlich in meinem Dorf gibt. Jedoch, wenn mal ein regnerischer Tag ansteht, 
+                    mache ich es mir gemütlich und lese ein Buch.
+
+                 <h2> Mein Lieblingsessen </h2>
+                    Ich koche sehr gerne und probiere immer mal wieder neue Rezepte aus.
+                    Besonders gefällt mir die ukrainische und italiänische Küche.
+
             </section>
 
             <section>
-                <h2>Abschnitt mit Text und Bild</h2>
+                <h2>In welche Länder möchte ich mal reisen</h2>
                 <div class="text-and-img">
                     <!-- Hier wird eine Klasse verwendet, die in CSS angibt wie das
                     Element gestaltet werden soll. Es werden hier 2 Kinder-Elemente
                     verwendet, damit wir den Effekt von einem Text neben einem Bild
                     einfach hinbekommen können. -->
-                    <div class="text">
-                        Hier ist eine Beschreibung von dem Bild, oder einfach
-                        Text der dazu passen könnte.
+                    <div class="text text-green">
+                        Ich möchte umbedingt mal nach Schweden reisen, denn ich liebe die Landschaften und die Kälte. 
+                        Besonders auch die Tradition Fika, wo man oft feines Gebäck probieren kann.
                     </div>
                     <div class="image">
-                        <img src="/img/mountains.png" alt="" />
+                        <img src="https://cdn.pixabay.com/photo/2018/01/26/17/26/sweden-flag-3109205_960_720.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="text-and-img">
+                    <!-- Hier wird eine Klasse verwendet, die in CSS angibt wie das
+                    Element gestaltet werden soll. Es werden hier 2 Kinder-Elemente
+                    verwendet, damit wir den Effekt von einem Text neben einem Bild
+                    einfach hinbekommen können. -->
+                    <div class="text text-green">
+                        Nach Japan zieht es michnwegen der Kultur und des essens. Ich möchte eine andere Seite, der Welt sehen.
+                    </div>
+                    <div class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="" />
+                    </div>
+                </div>
+
+                <div class="text-and-img">
+                    <!-- Hier wird eine Klasse verwendet, die in CSS angibt wie das
+                    Element gestaltet werden soll. Es werden hier 2 Kinder-Elemente
+                    verwendet, damit wir den Effekt von einem Text neben einem Bild
+                    einfach hinbekommen können. -->
+                    <div class="text text-green">
+                     Costa Rica, weil mich die Tierwelt dort sehr interessiert. Denn mein Lieblingstier ist das Faultier. 
+                     Das möchte ich umbedingt sehen. Da ich auch schokolade liebe, fände ich es interessant eine Kakaobohnen Tour zu machen
+                     um zu wissen und live zuzusehen, wie Schokolade hergestellt wird.  
+                    </div>
+                    <div class="image">
+                        <img src="https://www.nationalflaggen.de/media/139/flagge-costa-rica.png" alt="" />
+                    </div>
+                </div>
+                <div class="text-and-img">
+                    <!-- Hier wird eine Klasse verwendet, die in CSS angibt wie das
+                    Element gestaltet werden soll. Es werden hier 2 Kinder-Elemente
+                    verwendet, damit wir den Effekt von einem Text neben einem Bild
+                    einfach hinbekommen können. -->
+                    <div class="text text-green">
+                    Ich möchte wiedermal in die Ukraine reisen, obwohl ich schon oft dort war. 
+                    Denn ich habe meinen Onkel und meine anderen verwandten, schon lange nicht mehr gesehen.
+                    Auch gefallen mir die Strassen, Innenhöfe und die Bazarläden, die gefüllt mit verschiedenen Süssigkeiten sind.
+                
+                    </div>
+                    <div class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg" alt="" />
                     </div>
                 </div>
             </section>
         </main>
-
+        <div class="text-green">
+            Ich habe alle Bilder im Projekt, aus dem Internet (Safari) aufgesucht. <green>
+        </div>
         <footer>
             <!-- Hier kommt die Fusszeile der Webseite -->
         </footer>
